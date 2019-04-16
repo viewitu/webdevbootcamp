@@ -1,0 +1,41 @@
+#YelpCamp(254. YelpCamp: Initial Routes)
+
+*Add Landing Page
+*Add Campgrounds Page that lists all campgrounds
+
+Each Campground has:
+* Name
+* Image
+
+
+
+
+
+
+
+# Layout and Basic Styling (254. Yelpcamp: Layout)
+* Create our header and footer partials
+* Add Bootstrap
+
+
+
+
+# Creating New CampGrounds(256. YelpCamp: Creating CampGrounds)
+* Setup new Campground Post Route
+* Add in Body-parser
+* setup route to show form
+* add basic unstyled form
+
+
+#Style the Campground Page (258. YelpCamp: Styling Campgrounds)
+* Add better header / title
+* make campgrounds display in a grid
+
+#Style the Navbar and Forms (259. Yelpcamp: Styling Nav and Forms)
+* Add NavBar to all templates
+* style the new campground form
+
+#Add Mongoose
+* Install and Configure Mongoose
+* Setup Campground Model
+* Use Campground Model inside of routes

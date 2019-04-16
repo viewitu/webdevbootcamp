@@ -1,0 +1,11 @@
+<% include partial/header%>
+<h1> The Recipes page </h1>
+
+<% posts.forEach(function(post){ %>
+  
+   
+    <li> <%= post.title%> - <strong> <%= post.author%></strong> </li>
+
+<% }); %>
+<% include partial/footer%>
+

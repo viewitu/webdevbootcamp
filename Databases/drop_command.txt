@@ -1,0 +1,24 @@
+> show dbs
+admin     0.000GB
+cat_app   0.000GB
+config    0.000GB
+demo      0.000GB
+local     0.000GB
+yelpcamp  0.000GB
+
+> use yelpcamp
+switched to db yelpcamp
+
+> show collections
+campgrounds
+
+> db.campgrounds.find()
+{ "_id" : ObjectId("5b1a4052766fd618ef04a6d7"), "name" : "Salmon Creek", "image" : "https://pixabay.com/get/e837b1072af4003ed1584d05fb1d4e97e07ee3d21cac104497f8c27ea7e5b7b1_340.jpg", "__v" : 0 }
+{ "_id" : ObjectId("5b1a409d3dd0391904093018"), "name" : "Granite Hill", "image" : "https://pixabay.com/get/e83db40e28fd033ed1584d05fb1d4e97e07ee3d21cac104497f8c27ea7e5b7b1_340.jpg", "__v" : 0 }
+{ "_id" : ObjectId("5b1ac721e9cbe119be6d3ae2"), "name" : "Pea Ridge", "image" : "https://farm4.staticflickr.com/3659/3662521481_4a7bcce691.jpg", "__v" : 0 }
+
+db.campgrounds.drop()
+true
+
+db.campgrounds.find()
+> 

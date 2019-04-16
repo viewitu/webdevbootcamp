@@ -1,0 +1,182 @@
+#YelpCamp(254. YelpCamp: Initial Routes)
+
+*Add Landing Page
+*Add Campgrounds Page that lists all campgrounds
+
+Each Campground has:
+* Name
+* Image
+
+
+
+
+
+
+
+# Layout and Basic Styling (254. Yelpcamp: Layout)
+* Create our header and footer partials
+* Add Bootstrap
+
+
+
+
+# Creating New CampGrounds(256. YelpCamp: Creating CampGrounds)
+* Setup new Campground Post Route
+* Add in Body-parser
+* setup route to show form
+* add basic unstyled form
+
+
+#Style the Campground Page (258. YelpCamp: Styling Campgrounds)
+* Add better header / title
+* make campgrounds display in a grid
+
+#Style the Navbar and Forms (259. Yelpcamp: Styling Nav and Forms)
+* Add NavBar to all templates
+* style the new campground form
+
+#Add Mongoose (267. YelpCamp: Adding Mongoose)
+* Install and Configure Mongoose
+* Setup Campground Model
+* Use Campground Model inside of routes
+
+#Show Page (268. YelpCamp: Campground Show Page Part 1)
+* Review the RESTful routes we've seen so far
+* Add description to our campground model
+* Show db .collection.drop()
+* Add a show route/template
+
+#Refactor Mongoose Code (287. YelpCamp: Refactoring apps.js)
+* Create Modules Directory
+* Use module.exports
+* require everything correctly!
+
+#Add Seeds file(289: YelpCamp: Seeding The DataBase)
+*Add a seeds.js file
+*Run the seeds file every time the server starts
+
+#Add the Comment model!(291: YelpCamp: Creating Comments Model)
+* Make the errors go away!
+* display comments on campground show page
+
+#Comment New/Create(294: YelpCamp: Creating Comments Pt. 2)
+* Discuss nested routes
+* Add the comment new and creates routes
+* Add the new comment form
+
+#Style Show Page(295. YelpCamp: Styling Comments pt.1)
+* Add sidebar to show page
+* Display Comments Nicely
+
+#Finish Styling Show Page
+* Add public directory
+* Add custom stylesheets
+
+## Auth Pt. 1 - Add User Model (305: YelpCamp: Adding Auth Pt.1)
+* Install all packages needed for auth
+* Define user model
+                        npm install passport passport-local passport-local-mongoose express-session --save
+                        
+## Auth Pt. 2 - Register (306: YelpCamp: Adding Auth Pt.2)
+* Configure Passport
+* Add register routes
+* Add register Template
+
+## Auth Pt. 3 - Login (307: YelpCamp: Adding Auth Pt.3)
+* Add login routes
+* Add login template
+
+## Auth Pt. 4 - Logout/navbar (308: YelpCamp: Adding Auth Pt.4)
+
+* Add Logout Route
+* Prevent user from adding comment if no signed in
+* Add links to navbar
+* Show/hide auth links correctly
+
+## Auth Pt. 5 - Show/Hide Links appropriately (309: YelpCamp: Adding Auth Pt.5)
+* Show/hide auth links correctly
+
+## Refactor the Routes (310: YelpCamp: Refactoring Routes)
+* Use Express Router to reorganize all routes
+
+## Users and Comments
+* Associate users and comments
+* Save authors Name to a comment automatically
+
+## Users and Campgrounds
+* Prevent an unauthenticated user from creating a campground
+* Save Username and ID to newly created campground
+
+
+# Editing Campgrounds(315: YelpCamp: Campground Edit and Update)
+* Add Method-Override
+* Add Edit Route for Campgrounds
+* Add Link to Edit Page
+* Add Update Route
+
+#Deleting Campgrounds(316: YelpCamp: Campground Destroy)
+* Add Destroy Route
+* Add Delete button
+
+#Authorization Part 1: Campgrounds (318: YelpCamp : Campground Authorization Part 1 and 2)
+* User can only edit his/her campgrounds
+* User can only delete his/her campgrounds
+* Hide/Show edit and delete buttons
+
+#Editing Comments (320: YelpCamp : Comment Edit and Update)
+* Add Edit route for comments
+* Add Edit button
+* Add Update route
+
+<!--/campgrounds/:id/edit-->
+<!--/campgrounds/:id/comments/:comment_id/edit-->
+
+#Deleting Comments(322: YelpCamp Comment Destroy)
+* Add Destroy route
+* Add Delete button
+
+#Authorization Part 2: Comments (323: YelpCamp Comment Authorization)
+* User can only edit his/her comments
+* User can only delete his/her comments
+* Hide/Show edit and delete buttons
+* Refactor Middleware (324: YelpCamp: UI Improvements)
+
+#Adding in Flash!
+* Demo working version
+* Install and configure connect-flash
+* Add bootstrap alerts to header
+
+
+
+
+RESTful Routes REST - a mapping between HTTP routes and CRUD
+
+REpresentational
+State
+Transfer
+
+Create
+Read
+Update
+Destroy
+
+
+        name    url                 verb    discription
+================================================================================
+    1. Index    /dogs               GET     display a list of all dogs
+    2. New      /dogs/new           GET     displays form to make a new dog
+    3. Create   /dogs               POST    Add new dog to the database
+    4. Show     /dogs/:id           GET     Shows info about one dog
+    5. Edit     /dogs/:id/edit      GET     Show Edit form for One Dog
+    6. Update   /dogs/:id           PUT     Update a Particular Dog, Then redirect somewhere
+    7. Destroy  /dogs/:id           DELETE  DELETE a particular Dog, then redirect somewhere
+    
+    
+    Index   /campgrounds    
+    New     /campgrounds/new
+    Create  /campgrounds
+    Show    /campgrounds/:id
+    
+    new     /campground/:id/comments/new    GET
+    create  /campground/id/comments         POST
+    
